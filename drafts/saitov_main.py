@@ -87,13 +87,9 @@ if __name__ == "__main__":
     corrected['caps_words_count'] = corrected['text'].apply(feature_extractor.find_capsed_words)
 
     # if there is no sentiment data, label it automatically
-    if not uncorrected['sentiment'].any():
-        print("initiating sentiment analyzer..")
-        uncorrected = SentimentAnalyzer().sentiment_label_dataframe(uncorrected)
-
-    if not corrected['sentiment'].any():
-        print("initiating sentiment analyzer..")
-        corrected = SentimentAnalyzer().sentiment_label_dataframe(corrected)
+    print("initiating sentiment analyzer..")
+    uncorrected = SentimentAnalyzer().sentiment_label_dataframe(uncorrected)
+    corrected = SentimentAnalyzer().sentiment_label_dataframe(corrected)
 
     # acquire TD-IDF features for uncor
     print("acquring TF-IDF features for uncor..")
