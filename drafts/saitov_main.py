@@ -74,8 +74,8 @@ if __name__ == "__main__":
     uncorrected = pd.read_csv('/content/toxicity-detection-thesis/uncorrected_data.tsv', sep='\t')
     corrected = pd.read_csv('/content/toxicity-detection-thesis/corrected_data.tsv', sep='\t')
     
-    uncorrected['text'] = uncorrected['text'].apply(preprocessor.preprocess)
-    corrected['text'] = corrected['text'].apply(preprocessor.preprocess)
+    uncorrected = pd.read_csv('/content/toxicity-detection-thesis/data/uncorrected_data.tsv', sep='\t')
+    corrected = pd.read_csv('/content/toxicity-detection-thesis/data/corrected_data.tsv', sep='\t')
 
     # extract the important features
     print("extraction of features..")
