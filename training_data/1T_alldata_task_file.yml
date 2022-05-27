@@ -1,0 +1,13 @@
+ToxicityDetection:
+  model_type: BERT
+  config_name: DeepPavlov/rubert-base-cased
+  dropout_prob: 0.05
+  class_num: 2
+  metrics:
+  - classification_f1_score
+  loss_type: CrossEntropyLoss
+  task_type: SingleSenClassification
+  file_names:
+  - combined_tox_train.tsv
+  - combined_tox_val.tsv
+  - combined_tox_val.tsv
