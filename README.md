@@ -1,4 +1,4 @@
-# Automatic toxicity detection in social media for Russian
+# Automatic Toxic Comment Detection in Social Media for Russian
 NRU HSE, Fundamental and computational linguistics, Moscow 2022  
   
 All collected and utilized data is provided in the corresponding folders and files (see detailed structure below).  
