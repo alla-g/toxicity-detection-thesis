@@ -16,6 +16,20 @@ https://drive.google.com/uc?id=1gJ1IPzpaVG81EzyyF7l9m67L_IbH4uZQ
 https://drive.google.com/uc?id=1Xu-4-3kYv8HCU2j7zgx84FZm778lzIKk  
 
 In case links become unavailable, feel free to contact me on alla.s.gorbunova@gmail.com
+### Quick examples on how to infer multitask models in Colab:
+```
+!gdown https://drive.google.com/link_from_above
+
+pipe = inferPipeline(modelPath = 'sample_dir/model.pt',
+                     maxSeqLen = 128)
+# for predicting on one task:
+output = pipe.infer([['every text is in'], ['separate list']],
+                    ['ToxicityDetection'])
+# for predicting on both tasks:
+output = pipe.infer([['every text is in'], ['separate list']],
+                    ['ToxicityDetection', 'DistortionDetection'])
+```
+For more detailes, please refer to the [multi-task-NLP documentation](https://multi-task-nlp.readthedocs.io/en/latest/infering.html).
 
 ## Repository structure:  
 ```
@@ -32,7 +46,7 @@ In case links become unavailable, feel free to contact me on alla.s.gorbunova@gm
 │   ├── DATASTATEMENT.md  # data statement fot the corpus  
 |   └── distorted_toxicity.tsv  # corpus file  
 │      
-├── training_data  # train and val data for training neural networks  
+├── training_data  # train and val data and task files for training neural networks  
 │   ├── ...     
 │  
 ├── Testing models.ipynb  # notebook for first experiment  
