@@ -4,14 +4,14 @@
 * Dataset Title: Russian Distorted Toxicity
 * Dataset Curator(s): Alla Gorbunova, HRU HSE student
 * Dataset Version: 1.0
-* Dataset Citation and, if available, DOI: TBA
+* Dataset Citation and, if available, DOI: - 
 * Data Statement Author(s): Alla Gorbunova, HRU HSE student
 * Data Statement Version: 1.0
-* Data Statement Citation: N/A 
+* Data Statement Citation: - 
 
 ## B. Executive Summary
 
-Russian Distorted Toxicity is a dataset of comments from Russian social network VKontakte (vk.com) collected from three public groups. Is was created in order to test how existing toxicity classifiers for Russian language perform on data with distorted words (such as "sh!t" and similar distortions with letters, symbols or digits). Each text is annotated for presence of toxicity and presence of distortion. The dataset size is 3000 samples: 561 toxic comment and 126 distorted comments. The data was collected on 14.02.2022.
+Russian Distorted Toxicity is a dataset of comments from Russian social network VKontakte (vk.com) collected from three public groups. It was created in order to test how existing toxicity classifiers for Russian language perform on data with distorted words (such as "sh!t" and similar distortions with letters, symbols or digits). Each text is annotated for presence of toxicity and presence of distortion. The dataset size is 3000 samples: 561 toxic comment and 126 distorted comments. The data was collected on 14.02.2022.
 
 ## C. Curation Rationale 
 
@@ -28,7 +28,7 @@ BCP-47 language tag: ru-RU: Russian language as spoken in Russia and Post-Soviet
 ## F. Speaker Demographic
 
 Detailed speaker demographics in not available as users are not obliged to provide their true age, gender, race or other characteristics.
-We suppose that the majority of the audience is white males, age from 20 to 30, from poor and near-poor to lower and middle economic class. For most of them Russian is the first language, through people who learned Russian as L2 in school might be present. 
+We suppose that the majority of the audience is white males, age from 20 to 30, from poor and near-poor to lower and middle economic class. For most of them Russian is the first language, though people who learned Russian as L2 in school might be present. 
 
 * Age: mostly 20-30
 * Gender: mostly male
@@ -51,15 +51,15 @@ We suppose that the majority of the audience is white males, age from 20 to 30, 
 
 ## H. Speech Situation and Text Characteristics
 
-* Time and place of linguistic activity: 
+* Time and place of linguistic activity: online on vk.com
 * Date of data collection: 14.02.2022
 * Modality: written
-* Spontaneous
+* Spontaneous interaction
 * Asynchronous interaction (comment section)
 * Speakers’ intended audience: other Internet users and commenters
 * Genre: social media comment
 * Topic: various, mostly politics and sport
-* Non-linguistic context: posts with text or images they users comment (not included in the dataset)
+* Non-linguistic context: posts with text or images that users comment (not included in the dataset)
 
 ## I. Preprocessing and Data Formatting
 
@@ -71,7 +71,7 @@ Captured exactly as posted online by the speakers.
 
 ## K. Limitations
 
-Criteria for selection sources with high density of toxicity and distortions impose limitations on data diversity: the only groups suitable for the criteria happened to be politically oriented.
+Criteria for selecting sources with high density of toxicity and distortions impose limitations on data diversity: the only groups suitable for the criteria happened to be politically oriented.
 
 ## L. Metadata
 
